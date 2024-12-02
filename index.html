@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Importando toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <!--Importando uma biblioteca de icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--META TAG OG-->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Bar e Petiscaria Mistura Fina"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content="Bar & Petiscaria Mistura Fina"/>
+    <meta property="og:site_name" content="MisturaFina"/>
+
+
+
+
+
+    <link rel = "stylesheet" href="./styles/output.css" />
+
+    <title>Bar e Petiscaria Mistura Fina</title>
+</head>
+<body>
+<!--header-->
+<header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+         src="./pictures/logo.png"
+         alt="Logo Mistura Fina"
+         class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+    
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Mistura Fina</h1>
+
+        <span class=" text-white font-medium">Avenida Paraná, 196, Pontal do Paraná</span>
+
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+            <span class="text-white font-medium">Terça à Domingo 16:00 às 00:00 </span>
+        </div>
+    </div>
+</header>
+<!--fim do header-->
+<h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nosso Cardápio</h2>
+
+<div class="flex items-center justify-center my-10">
+    <div class="flex-grow border-t border-red-500 mx-4"></div> <!-- Adicionado mx-4 -->
+    <p class="text-2xl md:text-3xl font-semibold text-center">
+       Hambúrgueres
+    </p>
+    <div class="flex-grow border-t border-red-500 mx-4"></div> <!-- Adicionado mx-4 -->
+</div>
+
+
+<!--Inicio do cardápio-->
+<div id="menu">
+
+    <main class=" grid grid-cols-1 md:grid-cols-2  gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+        <!--produto 1-->
+        <div class="flex gap-2 h-48 items-stretch shadow-lg rounded-lg bg-white">
+            <img
+            src="./pictures/hamb-1.png"
+            alt="BAURU"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+            />
+
+
+            <div class="flex flex-col justify-between w-full">
+            <p class="font-bold"> BAURU </p>          <!--Titulo-->
+            <p class="text-sm break-words whitespace-normal">PÃO, MAIONESE, TOMATE, PRESUNTO E QUEIJO</p>          <!--descrição-->
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 12,00 </p>            <!--preço-->
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn "
+                    data-name="BAURU"
+                    data-price="12"
+                >
+                   <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+            </div>
+
+
+        </div>
+        <!--fim produto 1-->
+
+        <!--produto 2-->
+        <div class="flex gap-2h-48 items-stretch shadow-lg rounded-lg bg-white">
+            <img
+            src="./pictures/hamb-1.png"
+            alt="X – BURGUER"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+            />
+
+
+            <div class="flex flex-col justify-between w-full">
+            <p class="font-bold"> X – BURGUER </p>          <!--Titulo-->
+            <p class="text-sm break-words whitespace-normal">PÃO, HAMBÚRGUER, MAIONESE, PRESUNTO E QUEIJO</p>          <!--descrição-->
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 13,00 </p>            <!--preço-->
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn "
+                    data-name="X – BURGUER "
+                    data-price="13"
+                >
+                   <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+            </div>
+
+
+        </div>
+        <!--fim produto 2-->
+
+        <!--produto 3-->
+        <div class="flex gap-2 h-48 items-stretch shadow-lg rounded-lg bg-white">
+            <img
+            src="./pictures/hamb-1.png"
+            alt="X – SALADA"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+            />
+
+
+            <div class="flex flex-col justify-between w-full">
+            <p class="font-bold"> X – SALADA </p>          <!--Titulo-->
+            <p class="text-sm break-words whitespace-normal">PÃO, HAMBÚRGUER, MAIONESE, ALFACE, TOMATE, MILHO,
+                PRESUNTO E QUEIJO</p>  <!--descrição-->
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 16,00 </p>            <!--preço-->
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn "
+                    data-name=" X – SALADA"
+                    data-price="16"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+            </div>
+
+
+        </div>
+        <!--fim produto 3-->
+
+        <!--produto 4 -->
+        <div class="flex gap-2 h-48 items-stretch shadow-lg rounded-lg bg-white">
+            <img
+            src="./pictures/hamb-1.png"
+            alt="X – FRANGO"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+            />
+
+
+            <div class="flex flex-col justify-between w-full">
+            <p class="font-bold"> X – FRANGO </p>          <!--Titulo-->
+            <p class="text-sm break-words whitespace-normal">PÃO, HAMBÚRGUER, PEITO DE FRANGO, MAIONESE,
+                ALFACE, TOMATE, MILHO, PRESUNTO E QUEIJO</p>  <!--descrição-->
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 18,00 </p>            <!--preço-->
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn "
+                    data-name=" X – FRANGO"
+                    data-price="18"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+            </div>
+
+
+        </div>
+        <!--fim produto 4-->
+
+        <!--produto 5-->
+        <div class="flex gap-2 h-48 items-stretch shadow-lg rounded-lg bg-white ">
+            <img
+            src="./pictures/hamb-1.png"
+            alt="X – BACON"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+            />
+
+
+            <div class="flex flex-col justify-between w-full">
+            <p class="font-bold"> X – BACON </p>          <!--Titulo-->
+            <p class="text-sm break-words whitespace-normal">PÃO, HAMBÚRGUER, BACON, MAIONESE, ALFACE, TOMATE,
+                MILHO, PRESUNTO E QUEIJO</p>  <!--descrição-->
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 18,00 </p>            <!--preço-->
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn "
+                    data-name=" X – BACON"
+                    data-price="18"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+            </div>
+
+
+        </div>
+        <!--fim produto 5-->
+
+        <!--produto 6-->
+        <div class="flex gap-2 h-48 items-stretch shadow-lg rounded-lg bg-white">
+            <img
+            src="./pictures/hamb-1.png"
+            alt="X – EGG"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+            />
+
+
+            <div class="flex flex-col justify-between w-full">
+            <p class="font-bold"> X – EGG </p>          <!--Titulo-->
+            <p class="text-sm break-words whitespace-normal">PÃO, HAMBÚRGUER, OVO, MAIONESE, ALFACE, TOMATE,
+                MILHO, PRESUNTO E QUEIJO</p>  <!--descrição-->
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 18,00 </p>            <!--preço-->
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn "
+                    data-name=" X – EGG"
+                    data-price="18"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+            </div>
+
+
+        </div>
+        <!--fim produto 6-->
+
+        <!--produto 7-->
+        <div class="flex gap-2 h-48 items-stretch shadow-lg rounded-lg bg-white">
+        <img
+        src="./pictures/hamb-1.png"
+        alt="X – CALABRESA"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+        />
+
+
+        <div class="flex flex-col justify-between w-full">
+        <p class="font-bold"> X – CALABRESA </p>          <!--Titulo-->
+        <p class="text-sm break-words whitespace-normal">PÃO, HAMBÚRGUER, CALABRESA, MAIONESE, ALFACE,
+            TOMATE, MILHO, PRESUNTO E QUEIJO</p>  <!--descrição-->
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 18,00 </p>            <!--preço-->
+            <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn "
+                data-name=" X – CALABRESA"
+                data-price="18"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+        </div>
+
+
+    </div>
+    <!--fim produto 7-->
+
+    <!--produto 8-->
+    <div class="flex gap-2 h-48 items-stretch shadow-lg rounded-lg bg-white">
+        <img
+        src="./pictures/hamb-1.png"
+        alt="X – TUDO"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+        />
+
+
+        <div class="flex flex-col justify-between w-full">
+        <p class="font-bold">X – TUDO </p>          <!--Titulo-->
+        <p class="text-sm break-words whitespace-normal">PÃO, 2 HAMBÚRGUERES, PEITO DE FRANGO, OVO, BACON,
+            CALABRESA, MAIONESE, ALFACE, TOMATE, MILHO,
+            PRESUNTOS, QUEIJOS E BATATA FRITA</p>  <!--descrição-->
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 35,00 </p>            <!--preço-->
+            <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn "
+                data-name="X – TUDO"
+                data-price="35"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+        </div>
+
+
+    </div>
+    <!--fim produto 8-->
+    </main>
+
+    <div class="flex items-center justify-center my-10">
+        <div class="flex-grow border-t border-red-500 mx-4"></div> <!-- Adicionado mx-4 -->
+        <h2 class="text-2xl md:text-3xl font-semibold text-center">
+            Bebidas
+        </h2>
+        <div class="flex-grow border-t border-red-500 mx-4"></div> <!-- Adicionado mx-4 -->
+    </div>
+    
+    
+    <!--GRID BEBIDAS-->
+    <div class=" grid grid-cols-1 md:grid-cols-2  gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+    id="menu">
+
+    <!-- Bebida 1 -->
+    <div class="flex gap-2 h-36 items-stretch shadow-lg rounded-lg bg-white">
+        <img
+            src="./pictures/refri-1.png"
+            alt="ÁGUA S/ GÁS"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+        />
+
+        <div class="flex flex-col justify-start w-full">
+            <!-- Alinhar o conteúdo ao topo -->
+            <p class="font-bold mb-1">ÁGUA S/ GÁS</p> <!-- Título -->
+            <p class="font-bold text-lg mb-3">R$ 4,00</p> <!-- Preço -->
+
+            <!-- Botão alinhado ao canto inferior direito -->
+            <div class="mt-auto flex justify-end">
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="ÁGUA S/ GÁS"
+                    data-price="4"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+                </div>
+                </div>
+
+         </div>
+    <!-- Fim Bebida 1 -->
+
+    <!-- Bebida 2 -->
+    <div class="flex gap-2 h-36 items-stretch shadow-lg rounded-lg bg-white">
+    <img
+        src="./pictures/refri-1.png"
+        alt="ÁGUA C/ GÁS"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+    />
+
+    <div class="flex flex-col justify-start w-full">
+        <!-- Alinhar o conteúdo ao topo -->
+        <p class="font-bold mb-1">ÁGUA C/ GÁS</p> <!-- Título -->
+        <p class="font-bold text-lg mb-3">R$ 5,00</p> <!-- Preço -->
+
+        <!-- Botão alinhado ao canto inferior direito -->
+        <div class="mt-auto flex justify-end">
+            <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="ÁGUA C/ GÁS"
+                data-price="5"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+            </div>
+            </div>
+
+        </div>
+        <!-- Fim Bebida 2 -->
+
+        <!-- Bebida 3 -->
+    <div class="flex gap-2 h-36 items-stretch shadow-lg rounded-lg bg-white">
+        <img
+            src="./pictures/refri-1.png"
+            alt="ÁGUA TÔNICA"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+        />
+    
+        <div class="flex flex-col justify-start w-full">
+            <!-- Alinhar o conteúdo ao topo -->
+            <p class="font-bold mb-1">ÁGUA TÔNICA</p> <!-- Título -->
+            <p class="font-bold text-lg mb-3">R$ 6,00</p> <!-- Preço -->
+    
+            <!-- Botão alinhado ao canto inferior direito -->
+            <div class="mt-auto flex justify-end">
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="ÁGUA TÔNICA"
+                    data-price="6"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+                </div>
+                </div>
+    
+            </div>
+            <!-- Fim Bebida 3 -->
+
+            <!-- Bebida 4 -->
+    <div class="flex gap-2 h-36 items-stretch shadow-lg rounded-lg bg-white">
+        <img
+            src="./pictures/refri-1.png"
+            alt="REFRIGERANTE LATA"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+        />
+    
+        <div class="flex flex-col justify-start w-full">
+            <!-- Alinhar o conteúdo ao topo -->
+            <p class="font-bold mb-1">REFRIGERANTE LATA</p> <!-- Título -->
+            <p class="font-bold text-lg mb-3">R$ 6,00</p> <!-- Preço -->
+    
+            <!-- Botão alinhado ao canto inferior direito -->
+            <div class="mt-auto flex justify-end">
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="REFRIGERANTE LATA"
+                    data-price="6"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+                </div>
+                </div>
+    
+            </div>
+            <!-- Fim Bebida 4 -->
+
+            <!-- Bebida 5 -->
+    <div class="flex gap-2 h-36 items-stretch shadow-lg rounded-lg bg-white">
+        <img
+            src="./pictures/refri-1.png"
+            alt="H2O"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+        />
+    
+        <div class="flex flex-col justify-start w-full">
+            <!-- Alinhar o conteúdo ao topo -->
+            <p class="font-bold mb-1">H2O</p> <!-- Título -->
+            <p class="font-bold text-lg mb-3">R$ 7,00</p> <!-- Preço -->
+    
+            <!-- Botão alinhado ao canto inferior direito -->
+            <div class="mt-auto flex justify-end">
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="H2O"
+                    data-price="7"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+                </div>
+                </div>
+    
+            </div>
+            <!-- Fim Bebida 5 -->
+
+            <!-- Bebida 6 -->
+    <div class="flex gap-2 h-36 items-stretch shadow-lg rounded-lg bg-white">
+        <img
+            src="./pictures/refri-1.png"
+            alt="SMIRNOFF ICE"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+        />
+    
+        <div class="flex flex-col justify-start w-full">
+            <!-- Alinhar o conteúdo ao topo -->
+            <p class="font-bold mb-1">SMIRNOFF ICE</p> <!-- Título -->
+            <p class="font-bold text-lg mb-3">R$ 12,00</p> <!-- Preço -->
+    
+            <!-- Botão alinhado ao canto inferior direito -->
+            <div class="mt-auto flex justify-end">
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="SMIRNOFF ICE"
+                    data-price="12"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+                </div>
+                </div>
+    
+            </div>
+            <!-- Fim Bebida 6 -->
+
+            <!-- Bebida 7-->
+    <div class="flex gap-2 h-36 items-stretch shadow-lg rounded-lg bg-white">
+        <img
+            src="./pictures/refri-1.png"
+            alt="ENERGÉTICO"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duratio-300"
+        />
+    
+        <div class="flex flex-col justify-start w-full">
+            <!-- Alinhar o conteúdo ao topo -->
+            <p class="font-bold mb-1">ENERGÉTICO</p> <!-- Título -->
+            <p class="font-bold text-lg mb-3">R$ 14,00</p> <!-- Preço -->
+    
+            <!-- Botão alinhado ao canto inferior direito -->
+            <div class="mt-auto flex justify-end">
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="ENERGÉTICO"
+                    data-price="14"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+                </div>
+                </div>
+    
+            </div>
+            <!-- Fim Bebida 7 -->
+
+    </div>
+
+    <!--FIM GRID BEBIDAS-->
+
+    <!--sucos-->
+    <div class="flex items-center justify-center my-10">
+        <div class="flex-grow border-t border-red-500 mx-4"></div> <!-- Adicionado mx-4 -->
+        <h2 class="text-2xl md:text-3xl font-semibold text-center">
+            Sucos (500ML)
+        </h2>
+        <div class="flex-grow border-t border-red-500 mx-4"></div> <!-- Adicionado mx-4 -->
+    </div>
+
+    <!-- GRID SUCOS-->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+    <!-- Suco 1 -->
+
+
+
+    <!--FIM GRID SUCOS-->
+</div>
+<!--fim menu-->
+
+<!-- MODAL CART -->
+<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+     id="cart-modal">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between md-2 flex-col"></div>
+        <p class="font-bold">Total: <span id="cart-total"> 0.00 </span></p>
+        <p class="font-bold mt-4">Endereço de entrega</p> 
+        <input
+            type="text"
+            placeholder="Digite seu endereço completo..."
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"
+        />
+        <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+        <div class="flex items-center justify-between mt-5 w-full">
+            <button id="close-modal-btn" class="bg-gray-500 text-white px-4 py-2 rounded">Fechar</button>
+            <button id="checkout-btn" class="bg-green-500 text-white px-4 py-2 rounded">Finalizar pedido</button>
+        </div>
+    </div>
+</div>
+<!-- FIM MODAL CART -->
+
+<!-- BUTTON CART FOOTER -->
+<footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+    <button
+        class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn">
+        (<span id="cart-count">0</span>) Ver Carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+</footer>
+<!-- FIM BUTTON CART FOOTER -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
